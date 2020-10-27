@@ -1,2 +1,0 @@
-obj/Release/netcoreapp3.1/linux-x64/Greet.cs \
-obj/Release/netcoreapp3.1/linux-x64/GreetGrpc.cs: Protos/greet.proto

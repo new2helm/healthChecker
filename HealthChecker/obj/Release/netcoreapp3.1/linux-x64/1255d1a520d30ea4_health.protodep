@@ -1,2 +1,0 @@
-obj/Release/netcoreapp3.1/linux-x64/Health.cs \
-obj/Release/netcoreapp3.1/linux-x64/HealthGrpc.cs: Protos/health.proto

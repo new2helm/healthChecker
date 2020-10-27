@@ -1,0 +1,13 @@
+﻿image:
+  repository: bonsaiprod.azurecr.io/healthchecker
+  tag: latest
+healthchecker:
+  resources:
+    limitMemory: 128M
+    limitCpu: 0.1
+    requestsMemory: 128M
+    requestsCpu: 0.1
+  service:
+    grpc:
+      externalPort: 5000
+      internalPort: 5000

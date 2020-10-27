@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "HealthCheckerServer": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:42505",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

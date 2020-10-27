@@ -1,7 +1,9 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecker", "HealthChecker.csproj", "{60592704-6539-4465-B487-FB9BFB6BB23C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckerClient", "HealthCheckerClient\HealthCheckerClient.csproj", "{5556F1F0-951C-4F50-9A20-80B30E375EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthChecker", "HealthChecker\HealthChecker.csproj", "{559ADCF2-7946-4936-A0B7-1C5976741C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{60592704-6539-4465-B487-FB9BFB6BB23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60592704-6539-4465-B487-FB9BFB6BB23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60592704-6539-4465-B487-FB9BFB6BB23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60592704-6539-4465-B487-FB9BFB6BB23C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5556F1F0-951C-4F50-9A20-80B30E375EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5556F1F0-951C-4F50-9A20-80B30E375EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5556F1F0-951C-4F50-9A20-80B30E375EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5556F1F0-951C-4F50-9A20-80B30E375EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{559ADCF2-7946-4936-A0B7-1C5976741C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{559ADCF2-7946-4936-A0B7-1C5976741C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{559ADCF2-7946-4936-A0B7-1C5976741C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{559ADCF2-7946-4936-A0B7-1C5976741C6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
