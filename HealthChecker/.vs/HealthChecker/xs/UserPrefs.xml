@@ -1,16 +1,33 @@
-﻿<Properties StartupConfiguration="{60592704-6539-4465-B487-FB9BFB6BB23C}|Default">
-  <MonoDevelop.Ide.ItemProperties.HealthChecker PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.Development.json">
+﻿<Properties StartupConfiguration="{5556F1F0-951C-4F50-9A20-80B30E375EF8}|Default">
+  <MonoDevelop.Ide.ItemProperties.HealthCheckerClient PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HealthCheckerClient/Program.cs">
     <Files>
-      <File FileName="appsettings.Development.json" Line="11" Column="1" />
+      <File FileName="HealthChecker/charts/healthchecker/values.yaml" Line="2" Column="25" />
+      <File FileName="HealthChecker/charts/healthchecker/Chart.yaml" Line="1" Column="15" />
+      <File FileName="HealthCheckerClient/charts/healthcheckerclient/templates/deployment.yaml" Line="41" Column="32" />
+      <File FileName="HealthChecker/charts/healthchecker/templates/deployment.yaml" Line="32" Column="72" />
+      <File FileName="HealthCheckerClient/charts/healthcheckerclient/values.yaml" Line="2" Column="25" />
+      <File FileName="HealthCheckerClient/Program.cs" Line="15" Column="38" />
+      <File FileName="HealthCheckerClient/Protos/health.proto" Line="1" Column="1" />
+      <File FileName="HealthChecker/Startup.cs" Line="1" Column="1" />
+      <File FileName="HealthCheckerClient/Dockerfile" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="HealthChecker" expanded="True" selected="True">
+          <Node name="HealthChecker" expanded="True">
             <Node name="HealthChecker" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Grpc.AspNetCore" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="HealthCheckerClient" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -18,6 +35,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>HealthCheckerServer/HealthChecker.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

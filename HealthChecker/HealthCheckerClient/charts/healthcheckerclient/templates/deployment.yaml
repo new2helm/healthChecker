@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: healthcheckerclient
+  labels:
+    app: healthcheckerclient
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: healthcheckerclient
+  template:
+    metadata:
+      labels:
+        app: healthcheckerclient
+    spec:
+      enableServiceLinks: false
+      affinity:
+        nodeAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 1
+            preference:
+              matchExpressions:
+              - key: agentpool
+                operator: In
+                values:
+                - cpu
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        resources:
+          requests:
+            memory: "{{ .Values.healthcheckerclient.resources.requestsMemory }}"
+            cpu: "{{ .Values.healthcheckerclient.resources.requestsCpu }}"
+          limits:
+            memory: "{{ .Values.healthcheckerclient.resources.limitMemory }}"
+            cpu: "{{ .Values.healthcheckerclient.resources.limitCpu }}"
+        ports:
+          - containerPort: 5000
