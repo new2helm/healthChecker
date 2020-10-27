@@ -1,2 +1,0 @@
-obj/Debug/netcoreapp3.1/Health.cs \
-obj/Debug/netcoreapp3.1/HealthGrpc.cs: Protos/health.proto
