@@ -1,0 +1,4 @@
+apiVersion: v1
+description: This service represents healthchecker Module
+name: healthchecker
+version: v0.1.0

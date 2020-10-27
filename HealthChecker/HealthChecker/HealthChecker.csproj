@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'HealthCheckerServer' " />
+  <ItemGroup>
+    <Protobuf Include="Protos\health.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Protos\health.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="charts\" />
+    <Folder Include="charts\healthchecker\templates\" />
+  </ItemGroup>
+</Project>

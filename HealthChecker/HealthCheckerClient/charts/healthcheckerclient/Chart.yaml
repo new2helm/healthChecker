@@ -1,0 +1,4 @@
+﻿apiVersion: v1
+description: Healthcheckerclient
+name: healthcheckerclient
+version: v1.0.0
